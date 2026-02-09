@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <h1 id="display">
+
+        </h1>
+
+        <form >
+            <label for="temp"> <h2>Choose type of Conversion </h2></label>
+            <select name="temp" id="temps" onchange="change()">
+                     <option value="" disabled selected show>
+                         Choose an option…
+                    </option>
+                <option value="f" onchange="">
+                    Fahrenheit to Celcius
+                </option>
+                <option value="c">
+                    Celcius to Fahrenheit
+                </option>
+            </select>
+            <h2 id="type1">Fahrenheit</h3>
+            <input type="text" id="text1">
+            <h3>to</h3>
+            <h2 id="type2">Celcius</h3>
+            <h2 id="result">0</h2>       
+        </form>
+        
+        <button type="button" onclick="convert()">
+            Convert
+        </button>
+    </div>
+    <script src="test2.js"></script>
+</body>
+</html>
